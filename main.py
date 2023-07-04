@@ -22,7 +22,7 @@ class App:
     
     
     
-    def increment(self):
+    def increment(self):# Increments the counter
         try:
             self.Counter = str(int(self.Counter) + 1)
             self.label.configure(text=self.Counter)
@@ -33,7 +33,7 @@ class App:
         except Exception as e:
             print('Error', e)
 
-    def reset(self):
+    def reset(self):# Resets the counter
         try:
             self.Counter = '0'
             self.label.configure(text=self.Counter)
